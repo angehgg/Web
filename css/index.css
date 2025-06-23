@@ -1,56 +1,99 @@
-/* ----- HEADER GENERAL (sigue igual) ----- */
 header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-}
-
-.profileContainer {
-    width: fit-content;
-    margin: 0 auto;
     display: flex;
+        flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
-    border: 2px solid #0d6efd;
-    border-radius: 8px;
-    background: #ffffffea;
-    flex-direction: row-reverse;
+    justify-content: center;
+        background-color: #434343;
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+        border-bottom: #1b1b1b solid 5px;
 }
 
-.profilePic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.profileContainer h2,
-.profileContainer p {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #262626;
     margin: 0;
 }
 
-/* ----- NAVEGACIÓN EN LA ESQUINA DERECHA ----- */
-nav {
-    justify-self: end;
-    /* pega el <nav> a la derecha */
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
 }
 
-/* Aquí es donde alineramos los ítems en fila */
-nav ul {
+.redes {
+    display: flex;
     list-style: none;
-    /* sin bullets */
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    /* coloca los <li> en línea */
-    gap: 1rem;
-    /* separación entre enlaces */
+    padding: 0px;
+    margin: 0px;
+    background-color: #141414;
 }
 
-nav a {
+.redes a {
+    transition: background-color 0.1s ease-out;
+    background-color: #1b1b1b;
+    padding: 15px;
+}
+
+.redes a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.imagenes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+}
+
+/*.navlink{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}*/
+
+.fa-brands {
+    color: white;
+}
+
+.fa-solid{
+    color: white;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+}
+
+
+
+.navegacion a {
+    transition: background-color 0.1s ease-out;
+    color: white;
+    text-decoration: none;
+    padding-inline: 15px;
+    font-size: 20px;
+}
+        
+.navegacion a:hover {
+    background-color: #1b1b1b;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(128, 255, 0);
+    position: relative;
+    inset: 0;
+    margin: auto;
+}
+
+@media screen{
+    
 }
